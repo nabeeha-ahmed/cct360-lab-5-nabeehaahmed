@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A quiet moment inspired by the Credit River, with river sounds and an interactive photograph.">
+  <title>A Moment by the River</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>Credit River</header>
+  <main>
+    <h1>A Moment<br>by the River</h1>
+    <p>I live near the Credit River. This page brings a little of that feeling here.</p>
+
+    <div class="playback">
+      <button id="play-button" type="button">Play sound</button>
+      <span id="time">0:00 / 1:15</span>
+    </div>
+
+    <div class="photo-frame">
+      <img id="river-photo" src="assets/river.jpg" alt="A river flowing past rocks and trees with green, yellow and orange leaves." width="1000" height="667">
+    </div>
+
+    <div class="controls">
+      <div class="zoom-control">
+        <label for="zoom">Move closer to the water</label>
+        <input id="zoom" type="range" min="100" max="180" value="100" step="1">
+      </div>
+      <p id="status" role="status">Press play, then move the slider to explore the photo.</p>
+    </div>
+
+    <audio id="river-audio" src="assets/river.mp3" preload="metadata"></audio>
+    <noscript><p>Enable JavaScript to use the sound and zoom controls.</p></noscript>
+
+    <footer>
+      <p>Photo: Adobe Stock, image #535077679. Watermark retained. Image rights belong to the copyright holder.</p>
+      <p>Sound: “Water, Flow, Creek, Big Stream, 2m”, courtesy of <a href="https://www.epidemicsound.com/sound-effects/tracks/dda87f3b-480b-4080-bd35-37024a8e6bf4/">Epidemic Sound</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
